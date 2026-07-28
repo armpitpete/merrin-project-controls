@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "id": "SUMMARY-IDENTITY",
+      "files": "pass/project-summary.md",
+      "required_phrases": [
+        "What is this project?",
+        "How complete is it?",
+        "Is it likely to be completed?"
+      ],
+      "forbidden_phrases": [
+        "guaranteed to succeed",
+        "100% complete"
+      ],
+      "case_sensitive": false
+    }
+  ]
+}

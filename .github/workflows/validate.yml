@@ -1,0 +1,36 @@
+name: Validate shared controls
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run permanent tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Run positive phrase-contract proof
+        run: python scripts/check_phrase_contract.py examples/contracts/pass.json --root examples/fixture
+
+      - name: Prove negative fixture is rejected
+        shell: bash
+        run: |
+          if python scripts/check_phrase_contract.py examples/contracts/fail.json --root examples/fixture; then
+            echo "Negative fixture unexpectedly passed." >&2
+            exit 1
+          fi
