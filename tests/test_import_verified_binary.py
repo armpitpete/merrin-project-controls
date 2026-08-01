@@ -2,6 +2,7 @@ import hashlib
 import importlib.util
 from pathlib import Path
 import subprocess
+import sys
 import tempfile
 import unittest
 
@@ -11,6 +12,7 @@ SPEC = importlib.util.spec_from_file_location(
 )
 subject = importlib.util.module_from_spec(SPEC)
 assert SPEC.loader is not None
+sys.modules[SPEC.name] = subject
 SPEC.loader.exec_module(subject)
 
 
