@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-08-01",
+  "owner": "armpitpete",
+  "definitions": {
+    "active": "Has a current bounded implementation, evidence, publication, operational or maintenance lane.",
+    "parked": "Preserved for possible future work but has no current authorised lane.",
+    "completed": "Has reached its current finish line and requires maintenance only.",
+    "archived": "No further work is authorised; the repository should be read-only archived."
+  },
+  "counts": {
+    "active": 40,
+    "parked": 14,
+    "completed": 9,
+    "archived": 1,
+    "total": 64
+  },
+  "actual_github_archived_count": 0,
+  "archive_setting_pending": [
+    "armpitpete/project-control-disposable-proof-20260717"
+  ],
+  "classifications": {
+    "active": [
+      "armpitpete/a-book-for-neurodivergent-minds",
+      "armpitpete/a-life-that-fits",
+      "armpitpete/adventures-of-merrin-w-dream",
+      "armpitpete/alice-in-westminster",
+      "armpitpete/any-allergies",
+      "armpitpete/book-system-os",
+      "armpitpete/canon-garden",
+      "armpitpete/commentate-this",
+      "armpitpete/curious-world-of-ellie-morcant",
+      "armpitpete/diary-of-sound",
+      "armpitpete/diary-song-engine",
+      "armpitpete/evergreen-home-control",
+      "armpitpete/lirava",
+      "armpitpete/merrin-analytics",
+      "armpitpete/merrin-ecosystem",
+      "armpitpete/merrin-lyrics",
+      "armpitpete/merrin-project-controls",
+      "armpitpete/merrin-voice-01",
+      "armpitpete/merrinlab-16-step-sequencer",
+      "armpitpete/merrins-workshop",
+      "armpitpete/mirava",
+      "armpitpete/mutual-love",
+      "armpitpete/project-folder-checker",
+      "armpitpete/project-reader",
+      "armpitpete/project-status-engine",
+      "armpitpete/project-template",
+      "armpitpete/seven-lovely-sins",
+      "armpitpete/spectrasynth-app",
+      "armpitpete/story-evidence-collector",
+      "armpitpete/synth",
+      "armpitpete/the-hidden-country",
+      "armpitpete/the-still-pocket",
+      "armpitpete/the-world-changed-she-couldnt",
+      "armpitpete/thisweekinsmoke",
+      "armpitpete/threadkeeper",
+      "armpitpete/threshold-angels",
+      "armpitpete/unmurderous-objects",
+      "armpitpete/vaelinya-canon",
+      "armpitpete/vaelinya-site",
+      "armpitpete/you-see-what-you-do"
+    ],
+    "parked": [
+      "armpitpete/behringer-system-55-guide",
+      "armpitpete/bitter",
+      "armpitpete/blackhope",
+      "armpitpete/coven_coop",
+      "armpitpete/departures-case-47",
+      "armpitpete/design-shelf",
+      "armpitpete/merrinlab-vcv",
+      "armpitpete/nd-romance",
+      "armpitpete/raven-and-the-pilgrims",
+      "armpitpete/song-vault-desktop",
+      "armpitpete/synth-superpowers-test",
+      "armpitpete/two-ghosts",
+      "armpitpete/vaelinya-api",
+      "armpitpete/vaelinya-music"
+    ],
+    "completed": [
+      "armpitpete/armpitpete",
+      "armpitpete/merrin-open-synth-standards",
+      "armpitpete/merrinlab-alien-screamer",
+      "armpitpete/merrinlab-mfos-docs",
+      "armpitpete/merrinlab-ultimate-synth",
+      "armpitpete/merrinworld-site",
+      "armpitpete/mfos-echo-rockit",
+      "armpitpete/over-my-home",
+      "armpitpete/sample-hold-lab"
+    ],
+    "archived": [
+      "armpitpete/project-control-disposable-proof-20260717"
+    ]
+  },
+  "rules": [
+    "A lifecycle classification is an operating decision, not an inference from commit activity alone.",
+    "Parked repositories remain preserved and private or public according to their separate visibility decision.",
+    "Completed repositories may receive security, compatibility, accessibility or documentation maintenance without becoming active.",
+    "An archived classification requires no further implementation; GitHub's archive setting must also be applied and recorded.",
+    "A repository may change class only through an evidence-backed lifecycle review."
+  ]
+}
