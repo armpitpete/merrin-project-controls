@@ -1,0 +1,33 @@
+{
+  "project": "owner/example",
+  "finish_line": "Shared control adopted with direct evidence for required stages.",
+  "percentage_complete": {
+    "estimate": 100,
+    "confidence": "high",
+    "evidence": ["All bounded implementation tasks are counted."],
+    "remaining_work": [],
+    "blockers": []
+  },
+  "completion_likelihood": {
+    "assessment": "very_likely",
+    "confidence": "high",
+    "reasons": ["The bounded implementation lane is finished."]
+  },
+  "lifecycle_status": {
+    "claimed": "merged",
+    "verified": "merged",
+    "authority": "docs/real-thing-status-contract-v1.md",
+    "limitations": ["Deployment and consumer live behaviour are outside this example claim."],
+    "stages": [
+      {"stage":"designed","required":true,"required_environment":"accepted contract","observed_environment":"accepted contract","result":"PASS","relationship":"direct","evidence":["issue:1"],"limitations":[]},
+      {"stage":"implemented","required":true,"required_environment":"exact repository commit","observed_environment":"exact repository commit","result":"PASS","relationship":"direct","evidence":["commit:example"],"limitations":[]},
+      {"stage":"automated-checks","required":true,"required_environment":"exact-head CI","observed_environment":"exact-head CI","result":"PASS","relationship":"direct","evidence":["run:example"],"limitations":[]},
+      {"stage":"independent-review","required":true,"required_environment":"exact-head review","observed_environment":"exact-head review","result":"PASS","relationship":"direct","evidence":["review:example"],"limitations":[]},
+      {"stage":"merged","required":true,"required_environment":"default branch commit","observed_environment":"default branch commit","result":"PASS","relationship":"direct","evidence":["main:example"],"limitations":[]},
+      {"stage":"deployed","required":false,"rationale":"The claim stops at merged shared control.","result":"NOT_APPLICABLE","relationship":"not-applicable","evidence":[],"limitations":[]},
+      {"stage":"live-behaviour","required":false,"rationale":"No consumer-live claim is made.","result":"NOT_APPLICABLE","relationship":"not-applicable","evidence":[],"limitations":[]},
+      {"stage":"human-acceptance","required":false,"rationale":"Owner acceptance is not required for this merged-control claim.","result":"NOT_APPLICABLE","relationship":"not-applicable","evidence":[],"limitations":[]}
+    ]
+  },
+  "next_bounded_action": "Adopt the control in one collision-checked consumer repository."
+}
