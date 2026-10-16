@@ -18,6 +18,12 @@ This repository prevents each project from independently rebuilding the same saf
 
 Versions are recorded in [`control-versions.json`](control-versions.json).
 
+## Preservation Before Correction (PBC v1.0)
+
+Defect repairs must protect accepted behaviour, make the smallest justified change, prove the fix and affected regressions, and stop at acceptance. A regression stops the isolated candidate instead of triggering speculative fix-on-fix work.
+
+See [the PBC repair contract](docs/preservation-before-correction-v1.md). Adoption in existing repositories requires their normal authority and review gates; this shared document alone does not alter a consumer.
+
 ## Repository structure
 
 ```text
