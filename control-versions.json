@@ -5,6 +5,7 @@
     "exact_head_protection": "1.0",
     "phrase_contract": "1.0",
     "project_status": "1.0",
-    "plain_language_project_summary": "1.0"
+    "plain_language_project_summary": "1.0",
+    "preservation_before_correction": "1.0"
   }
 }
